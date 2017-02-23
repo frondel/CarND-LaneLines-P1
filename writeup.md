@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./images/img.jpg "Pipeline Output"
+[image1]: ./img.jpg "Pipeline Output"
 
 ---
 
