@@ -11,33 +11,25 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./images/img.jpg "Pipeline Output"
 
 ---
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+My pipeline consisted of 6 steps. First, I converted the images to grayscale, then I applied canny transformation which will
+automatically compute the threshold and apply it. Then I converted yellow lines to white to avoid innacurate
+line recognition. Then I applied gaussian blur to the image. After that I have defined the region of interest and drew the lines.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by automatically computing the slope
+and intercepts of the line and drawing a new extended line based on the calculated slope and the intercepts.
 
 ![alt text][image1]
 
+One potential shortcoming would be what would happen when the roads are hilly or not exactly flat.
+Another shortcoming could be that the extended lines would overlap sometimes.
+Anotehr shortcoming could be that the right or left lanes depending on what side of the road you drive on, 
+would extend when there is an exit ramp because there is a too big of a gap between the lines.
 
-###2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-
-###3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to fix the high Y threshold and fix the occasional overlap of extended lines
+Another potential improvement could be to improve the recognition on non-flat/hilly roads.
