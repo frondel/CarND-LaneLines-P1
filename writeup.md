@@ -29,5 +29,5 @@ Another shortcoming could be that the extended lines would overlap sometimes.
 Another shortcoming could be that the right or left lanes depending on what side of the road you drive on, 
 would extend when there is an exit ramp because there is a too big of a gap between the lines.
 
-A possible improvement would be to fix the high Y threshold and fix the occasional overlap of extended lines
+A possible improvement would be to fix the high Y threshold and fix the occasional overlap of extended lines.
 Another potential improvement could be to improve the recognition on non-flat/hilly roads.
