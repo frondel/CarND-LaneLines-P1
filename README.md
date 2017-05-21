@@ -1,7 +1,5 @@
 **Finding Lane Lines on the Road** 
 
----
-
 [image1]: ./img.png "Pipeline Output"
 
 ---
